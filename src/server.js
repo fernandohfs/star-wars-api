@@ -31,7 +31,7 @@ class Server {
 
     this.app.all("*", async (req, res, next) => {
       res.send({
-        routes: ["films", "films/id"]
+        routes: ["films", "films/id", "health/check"]
       });
     });
   }
